@@ -1,0 +1,6 @@
+{
+  "name": "NoteCalc",
+  "description": "A notebook-style calculator with variables, tabs, and instant results.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

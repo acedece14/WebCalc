@@ -1,0 +1,89 @@
+@import "@fontsource/fira-code";
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+@layer base {
+  :root {
+    --background: #0d0d0e;
+    --foreground: #e0e0e0;
+    --card: #161618;
+    --card-foreground: #e0e0e0;
+    --popover: #161618;
+    --popover-foreground: #e0e0e0;
+    --primary: #f27d26;
+    --primary-foreground: #0d0d0e;
+    --secondary: #1d1d20;
+    --secondary-foreground: #e0e0e0;
+    --muted: #161618;
+    --muted-foreground: #4e4e50;
+    --accent: #1d1d20;
+    --accent-foreground: #f27d26;
+    --destructive: #ef4444;
+    --destructive-foreground: #f8fafc;
+    --border: #2a2a2c;
+    --input: #2a2a2c;
+    --ring: #f27d26;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: #0d0d0e;
+    --foreground: #e0e0e0;
+    --card: #161618;
+    --card-foreground: #e0e0e0;
+    --popover: #161618;
+    --popover-foreground: #e0e0e0;
+    --primary: #f27d26;
+    --primary-foreground: #0d0d0e;
+    --secondary: #1d1d20;
+    --secondary-foreground: #e0e0e0;
+    --muted: #161618;
+    --muted-foreground: #4e4e50;
+    --accent: #1d1d20;
+    --accent-foreground: #f27d26;
+    --destructive: #ef4444;
+    --destructive-foreground: #f8fafc;
+    --border: #2a2a2c;
+    --input: #2a2a2c;
+    --ring: #f27d26;
+  }
+}
+
+@layer utilities {
+  .syntax-variable { color: #5bb5a2; } /* Teal */
+  .syntax-operator { color: #f27d26; } /* Orange */
+  .syntax-constant { color: #f27d26; font-weight: bold; }
+  .syntax-comment { color: #4e4e50; font-style: italic; }
+  .syntax-comment-hash { color: #818cf8; font-style: italic; } /* Indigo-ish */
+  .syntax-comment-slash { color: #fbbf24; font-style: italic; } /* Yellow */
+  .syntax-number { color: #8e9299; } /* Gray */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
